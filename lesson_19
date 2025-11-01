@@ -224,5 +224,3 @@ print(sorted(my_tuple))
 ```python
 letters = ('a', 'b', 'a', 'c', 'b', 'a')
 ```
-
----

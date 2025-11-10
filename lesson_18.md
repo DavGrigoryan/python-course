@@ -3,7 +3,7 @@
 
 ---
 
-## 🧩 Lesson 17: Python Dictionaries
+## 🧩 Lesson 18: Python Dictionaries
 
 link to presentation:
 

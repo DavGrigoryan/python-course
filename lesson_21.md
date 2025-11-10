@@ -3,7 +3,7 @@
 
 ---
 
-## 🧩 Lesson 20: Nested Data Structures & Recursion
+## 🧩 Lesson 21: Nested Data Structures & Recursion
 
 ---
 

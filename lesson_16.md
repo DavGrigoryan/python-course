@@ -5,8 +5,6 @@
 
 ## 📘 Lesson 16: Python Recursion Functions
 
-link to presentation:
-
 ---
 
 ## Basic Recursion

@@ -11,7 +11,7 @@ link to presentation:
 
 ---
 
-## 🟢 What Is a Dictionary?
+## 🟢 What Is a Dictionary? 
 
 A dictionary is used to store data in key–value pairs.
 Each key must be unique, and each value can be any data type.

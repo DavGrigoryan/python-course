@@ -3,7 +3,7 @@
 
 ---
 
-## 🧩 Lesson 21: Scope & Global Functions
+## 🧩 Lesson 22: Scope & Global Functions
 
 ### ✳️ What is “Scope”?
 

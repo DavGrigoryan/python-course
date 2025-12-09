@@ -365,4 +365,4 @@ school1.list_classrooms()
         - Իրականացնում է
             - `make_sound()` – `"Duck Դոնալդ says: Quack!"`
             - `walk()`, `swim()`, `fly()` – յուրաքանչյուրը իր հատուկ ձևով։
-            - `move()`-ը` `"Duck can walk, swim and fly!"`։
+            - `move()`-ը `"Duck can walk, swim and fly!"`։

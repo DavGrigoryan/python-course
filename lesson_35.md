@@ -320,6 +320,49 @@ school1.list_classrooms()
 
 </details>
 
+---
 
+# Exercise 2 (Homework)
 
+### Ընդհանուր Animal abstract clas
 
+1. Ստեղծիր Animal abstract class, որը պիտի․
+
+    - Ժառանգվի `abc.ABC`-ից։
+        - `name` (կենդանու անունը)
+        - `species` (տեսակը, օրինակ՝ "Dog", "Fish", "Eagle")
+    - Ունի հետևյալ մեթոդները․
+        - `__init__(self, name: str, species: str)`
+        - `describe(self) -> str` – կանխա սահմանված (concrete) մեթոդ, որը կվերադարձնի ինչ-որ կարճ տեքստ կենդանու մասին
+        - `make_sound(self) -> None` – abstract method, ամեն կենդանի իր ձայնն ունի։
+        - `move(self) -> None` – abstract method, որը ներկայացնում է «ինչպե՞ս է շարժվում այս կենդանին» (քայլում է,
+          լողում է, թռչում է, թե մի քանի բան միաժամանակ)։
+
+2. Կենդանիների տեսակային abstract դասեր
+    - TerrestrialAnimal (ցամաքային կենդանի)
+        - Abstract method `walk(self) -> None`
+        - Abstract method `move(self)`
+
+    - AquaticAnimal (ջրային կենդանի)
+        - Abstract method `swim(self) -> None`
+        - Abstract method `move(self)`
+
+    - AerialAnimal (օդային կենդանի / թռչուն)
+        - Abstract method `fly(self) -> None`
+        - Abstract method `move(self)`
+
+3. Կոնկրետ կենդանիներ (Concrete classes)
+    - `Dog` – ժառանգվում է `TerrestrialAnimal`-ից։
+        - Իրականացնում է
+            - `make_sound()` – օրինակ՝ տպի `"Dog Շարիկ says: Woof!"`
+            - `walk()` – տպի, թե ինչպես է քայլում շունը։
+
+    - `Fish` – ժառանգվում է `AquaticAnimal`-ից։
+    - `Eagle` – ժառանգվում է `AerialAnimal`-ից։
+    - `Duck` – բազմակի ժառանգում, քանի որ բադը և՛ ջրում է, և՛ ցամաքում, և՛ օդում․
+        - ժառանգվում է մի քանի դասից, օրինակ՝ `TerrestrialAnimal` և `AquaticAnimal` և `AerialAnimal` (այսինքն՝
+          միաժամանակ երեքից)։
+        - Իրականացնում է
+            - `make_sound()` – `"Duck Դոնալդ says: Quack!"`
+            - `walk()`, `swim()`, `fly()` – յուրաքանչյուրը իր հատուկ ձևով։
+            - `move()`-ը` `"Duck can walk, swim and fly!"`։

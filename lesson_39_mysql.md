@@ -3,7 +3,7 @@
 
 ---
 
-# 🧩 Lesson 39 – Python + MySQL Introduction
+# 🧩 Lesson 39 – Python + MySQL Introduction 
 
 ## 📌 Ի՞նչ է Database
 

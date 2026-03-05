@@ -7,7 +7,7 @@
 
 ---
 
-## ## 📌 Table ի՞նչ է
+## 📌 Table ի՞նչ է
 
 Table-ը database-ի հիմնական բաղադրիչն է, որտեղ պահվում են տվյալները։
 
@@ -18,6 +18,8 @@ Table-ը նման է Excel աղյուսակի։
 | 1  | Anna | 21  |
 | 2  | John | 22  |
 
+---
+
 ## 📌 Create Table Syntax
 
 ```sql
@@ -27,6 +29,8 @@ CREATE TABLE table_name
     column2 datatype
 );
 ```
+
+---
 
 ## 📌 Python-ից Table ստեղծել
 
@@ -289,18 +293,6 @@ name = Maria
 age = 24
 ```
 
-<details> <summary>💡 Solution</summary>
-
-```python
-sql = "INSERT INTO students (name, age) VALUES (%s, %s)"
-values = ("Maria", 24)
-
-cursor.execute(sql, values)
-connection.commit()
-```
-
-</details>
-
 ---
 
 ### ✅ Task 2 — Ավելացնել 5 students
@@ -315,43 +307,11 @@ Ani 20
 Gor 23
 ```
 
-<details> <summary>💡 Solution</summary>
-
-```python
-students = [
-    ("Alex", 22),
-    ("Lilit", 19),
-    ("Karen", 25),
-    ("Ani", 20),
-    ("Gor", 23)
-]
-
-cursor.executemany(
-    "INSERT INTO students (name, age) VALUES (%s, %s)",
-    students
-)
-
-connection.commit()
-```
-
-</details>
-
 ---
 
 ### ✅ Task 3 — Տպել բոլոր students
 
 Տպել ամբողջ students table-ը։
-
-<details> <summary>💡 Solution</summary>
-
-```python
-cursor.execute("SELECT * FROM students")
-
-for student in cursor.fetchall():
-    print(student)
-```
-
-</details>
 
 ---
 
@@ -359,29 +319,6 @@ for student in cursor.fetchall():
 
 Տպել միայն առաջին student-ը։
 
-<details> <summary>💡 Solution</summary>
-
-```python
-cursor.execute("SELECT * FROM students")
-
-student = cursor.fetchone()
-
-print(student)
-```
-
-</details>
-
 ### ✅ Task 5 — Տպել միայն անունները
 
 Տպել միայն `name` column-ը։
-
-<details> <summary>💡 Solution</summary>
-
-```python
-cursor.execute("SELECT name FROM students")
-
-for name in cursor.fetchall():
-    print(name)
-```
-
-</details>

@@ -32,7 +32,7 @@ SET column1 = value1
 WHERE condition;
 ```
 
-⚠️ Եթե WHERE չգրենք, **կփոխվեն** բոլոր **rows**-ները։
+⚠️ Եթե WHERE չգրենք, **կփոխվեն** բոլոր **rows**-ները
 
 ---
 
